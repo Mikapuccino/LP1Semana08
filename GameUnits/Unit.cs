@@ -7,9 +7,9 @@ namespace GameUnits
 {
     public abstract class Unit
     {
-        private int movement;
+        public int movement;
         public virtual int Health { get; set; }
-        private abstract float Cost { get; }
+        public abstract float Cost { get; }
 
         public Unit(int movement, int health)
         {

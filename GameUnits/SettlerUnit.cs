@@ -7,11 +7,14 @@ namespace GameUnits
 {
     public class SettlerUnit : Unit
     {
-        public override float Cost = 5;
-        public SettlerUnit( int movement, int health)
+        public override float Cost
         {
-            this.movement = 1;
-            Health = 2;
+            get { return 5; }
+        }
+        public SettlerUnit(int mov=1, int health=2) : base(mov, health)
+        {
+            movement = mov;
+            Health = health;
         }
     }
 }
