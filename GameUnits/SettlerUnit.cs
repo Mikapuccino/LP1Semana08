@@ -7,9 +7,10 @@ namespace GameUnits
 {
     public class SettlerUnit : Unit
     {
-        public void Settle()
+        public SettlerUnit( int movement, int health)
         {
-            
+            this.movement = 1;
+            Health = 2;
         }
     }
 }
