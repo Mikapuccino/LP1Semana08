@@ -5,8 +5,14 @@ using System.Threading.Tasks;
 
 namespace GameUnits
 {
-    public class MilitaryUnit
+    public class MilitaryUnit : Unit
     {
-        
+        public int AttackPower { get; }
+        public int XP { get; private set; }
+
+        public void Attack(Unit u)
+        {
+            
+        }
     }
 }

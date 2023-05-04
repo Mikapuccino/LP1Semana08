@@ -5,8 +5,11 @@ using System.Threading.Tasks;
 
 namespace GameUnits
 {
-    public class SettlerUnit
+    public class SettlerUnit : Unit
     {
-        
+        public void Settle()
+        {
+            
+        }
     }
 }
