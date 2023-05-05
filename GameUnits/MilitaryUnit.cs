@@ -22,8 +22,8 @@ namespace GameUnits
 
         public void Attack(Unit u)
         {
-            XP =+ 1;
-            u.Health =- 1;
+            XP += 1;
+            u.Health -= 1;
         }
 
         public override string ToString()
