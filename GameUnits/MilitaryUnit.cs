@@ -8,7 +8,7 @@ namespace GameUnits
     public class MilitaryUnit : XPUnit
     {
         public int AttackPower { get; }
-        public override int Health => Health + XP;
+        public override int Health => base.Health + XP;
         public override float Cost
         {
             get { return AttackPower + XP; }
@@ -22,8 +22,8 @@ namespace GameUnits
 
         public void Attack(Unit u)
         {
-            XP += 1;
-            u.Health -= 1;
+            XP =+ 1;
+            u.Health =- 1;
         }
 
         public override string ToString()
