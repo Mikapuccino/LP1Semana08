@@ -21,5 +21,10 @@ namespace GameUnits
         {
             Console.WriteLine($"This unit has moved {movement} tiles");
         }
+        
+        public override string ToString()
+        {
+            return $"{GetType()}: HP={Health} COST={Cost}";
+        }
     }
 }
